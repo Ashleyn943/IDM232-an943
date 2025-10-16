@@ -39,11 +39,6 @@ hr{
     margin: 2rem;
 }
 
-.show {
-  display: block;
-}
-
-
 /*div*/
 #searchBar{
     text-align: center;
@@ -104,6 +99,7 @@ hr{
         overflow: hidden;
         padding: 1rem;
         min-height: 470px;
+        display: none;
     }
         .dishTitle{
             font-size: 1.25rem;
@@ -117,6 +113,10 @@ hr{
             height: auto;
             width: 100%;
         }
+
+    .show {
+        display: block;
+    }
 
 /*Recipe Page*/
 
@@ -151,10 +151,15 @@ hr{
         
     .IngredientsImg, .ToolImg, .StepImg{
         display: block;
-        margin: 2rem auto;
         height: auto;
         width: 75%;
     }
+        .IngredientsImg, .StepImg{
+            margin: 2rem auto;
+        }
+        .ToolImg{
+            margin: auto
+        }
         .ToolImg, .StepImg{
             border: .5rem solid var(--foreground);
             border-radius: 2rem;
@@ -170,6 +175,10 @@ hr{
 /*Error Page*/
 #errorwarning{
     margin: 2rem;
+    text-align: center;
+}
+
+#errorReturn{
     text-align: center;
 }
 
@@ -195,7 +204,7 @@ hr{
         }
 
 /*recipe page*/
-#RecipeHead{
+#RecipeHead, #toolsNeeded{
     display: grid;
     grid-template-columns: 45% 55%;
     align-items: center;
@@ -205,7 +214,7 @@ hr{
     }
 
     /*imgs*/
-    .IngredientsImg, .ToolImg, .StepImg{
+    .IngredientsImg, .StepImg{
         width: 50%;
     }
         .StepImg{
@@ -232,14 +241,12 @@ hr{
 
 
 @media screen and (min-width: 1000px) {
-    #recipe-grid{
-        margin: 0rem 7rem;
-    }
 
     /*div*/
     .recipe-rows{
         display: grid;
         grid-template-columns: 33% 33% 33%;
+        margin: 0rem 7rem;
     }
         .recipe-card{
             min-height: 435px;

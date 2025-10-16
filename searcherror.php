@@ -5,15 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel=normalize href="CSS/normalize.css">
     <link rel=stylesheet href="CSS/stylesheet.css">
-    <title>Filtered</title>
+    <title>Error</title>
 </head>
 <body>
     <div class="page-header">
         <h1><a href="index.html">Recipes</a></h1>
     </div>
     <div id="searchBar">
-        <input type="text" placeholder="Search.." id="inputbar">
-        <input type="submit" value="Search" id="inputbutton"> 
+        <form onsubmit="nextPage()">
+            <input type="text" placeholder="Search.." id="inputbar">
+            <input type="submit" value="Search" id="inputbutton"> 
+        </form>
     </div>
     <div id="filterbuttons">
         <button class="sort" onclick="filterSelection('Beef')">Beef</button>
@@ -21,6 +23,10 @@
         <button class="sort" onclick="filterSelection('Pork')">Pork</button>
         <button class="sort" onclick="filterSelection('Seafood')">Seafood</button>
         <button class="sort" onclick="filterSelection('Vegetarian')">Vegetarian</button>
+    </div>
+    <div id="errorMessage">
+        <h1 id="errorwarning">Unable to find. <br>Please try again.</h1>
+        <h2 id="errorReturn">Return to Recipe Catelog</h2>
     </div>
 </body>
 </html>
