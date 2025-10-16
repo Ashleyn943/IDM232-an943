@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="page-header">
-        <h1><a href="index.html">Recipes</a></h1>
+        <h1><a href="index.php">Recipes</a></h1>
     </div>
     <div id="searchBar">
         <form onsubmit="nextPage()">
@@ -26,7 +26,7 @@
     </div>
     <div id="errorMessage">
         <h1 id="errorwarning">Unable to find. <br>Please try again.</h1>
-        <h2 id="errorReturn">Return to Recipe Catelog</h2>
+        <h2 id="errorReturn"><a href="index.php">Return to Recipe Catelog</a></h2>
     </div>
 </body>
 </html>

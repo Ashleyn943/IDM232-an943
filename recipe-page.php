@@ -9,10 +9,10 @@
 </head>
 <body>
     <div class="page-header">
-        <h1><a href="index.html">Recipes</a></h1>
+        <h1><a href="index.php">Recipes</a></h1>
     </div>
     <div id="backBtn">
-        <h3><a href="index.html">Back to Recipe Catalog</a></h3>
+        <h3><a href="index.php">Back to Recipe Catalog</a></h3>
     </div>
     <div id="contents">
         <div id="RecipeHead">

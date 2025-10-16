@@ -180,6 +180,12 @@ hr{
 
 #errorReturn{
     text-align: center;
+    a{
+        color: var(--foreground);
+    }
+    a:hover{
+        color: var(--yellow-200);
+    }
 }
 
 @media screen and (min-width: 600px) {

@@ -3,7 +3,7 @@
 //search link
 
 function nextPage() {
-  setTimeout(function () { window.location = "searcherror.html" }, 1);
+  setTimeout(function () { window.location = "searcherror.php" }, 1);
 };
 
 //filter
