@@ -39,6 +39,11 @@ hr{
     margin: 2rem;
 }
 
+.show {
+  display: block;
+}
+
+
 /*div*/
 #searchBar{
     text-align: center;
@@ -161,6 +166,12 @@ hr{
         .StepImg{
             margin-top: .5rem;
         }
+
+/*Error Page*/
+#errorwarning{
+    margin: 2rem;
+    text-align: center;
+}
 
 @media screen and (min-width: 600px) {
 /*filter*/

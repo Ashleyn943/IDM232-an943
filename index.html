@@ -9,13 +9,16 @@
 </head>
 <body>
     <div class="page-header">
-        <h1>Recipes</h1>
+        <h1><a href="index.html">Recipes</a></h1>
     </div>
     <div id="searchBar">
-        <input type="text" placeholder="Search.." id="inputbar">
-        <input type="submit" value="Search" id="inputbutton"> 
+        <form>
+            <input type="text" placeholder="Search.." id="inputbar">
+            <input type="submit" value="Search" onclick="nextPage()" id="inputbutton"> 
+        </form>
     </div>
     <div id="filterbuttons">
+        <button class="sort active" onclick="filterSelection('All')">Show All</button>
         <button class="sort" onclick="filterSelection('Beef')">Beef</button>
         <button class="sort" onclick="filterSelection('Chicken/Turkey')">Chicken/Turkey</button>
         <button class="sort" onclick="filterSelection('Pork')">Pork</button>
@@ -24,66 +27,78 @@
     </div>
     <div id="recipe-grid">
         <div class="recipe-rows">
-            <a href="recipe-page.html">
-                <div class="recipe-card Chicken/Turkey">
+            <div class="recipe-card Chicken/Turkey">
+                <a href="recipe-page.html">
                     <img src="Media/Ancho-Orange_Chicken_with_Kale_Rice_Roasted_Carrots/ancho-chicken-teaser-header-img.webp" class="dishPic">
                     <h2 class="dishTitle">Ancho-Orange Chicken with Kale Rice & Roasted Carrots</h2>
-                </div>
-            </a>
-            <a href="recipe-page.html">
-                <div class="recipe-card Beef">
+                </a>
+            </div>
+
+            <div class="recipe-card Beef">
+                <a href="recipe-page.html">
                     <img src="Media/Beef_Medallions_Mushroom_Sauce_with_Mashed_Potatoes/beef-medallions-teaser-header-img.webp" class="dishPic">
                     <h2 class="dishTitle">Beef Medallions & Mushroom Sauce with Mashed Potatoes</h2>
-                </div>
-            </a>
-            <a href="recipe-page.html">
-                <div class="recipe-card Vegetarian">
+                </a>
+            </div>
+
+            <div class="recipe-card Vegetarian">
+                <a href="recipe-page.html">
                     <img src="Media/Broccoli_Basil_Pesto_Sandwiches_with_Romaine_Citrus_Salad/broccoli-basil-teaser-header-img.webp" class="dishPic">
                     <h2 class="dishTitle">Broccoli & Basil Pesto Sandwiches with Romaine & Citrus Salad</h2>
-                </div>
-            </a>
-            <a href="recipe-page.html">
-                <div class="recipe-card Vegetarian">
+                </a>
+            </div>
+
+            <div class="recipe-card Vegetarian">
+                <a href="recipe-page.html">
                     <img src="Media/Broccoli_Mozzarella_Calzones_with_Caesar_Salad/broccoli-calzones-teaser-header-img.webp" class="dishPic">
                     <h2 class="dishTitle">Broccoli & Mozzarella Calzones with Caesar Salad</h2>
-                </div>
-            </a>
-            <a href="recipe-page.html">
-                <div class="recipe-card Vegetarian">
+                </a>
+            </div>
+            
+            <div class="recipe-card Vegetarian">
+                <a href="recipe-page.html">    
                     <img src="Media/Bucatini_Alfredo_with_Broccoli/bucantini-alfredo-teaser-header-img.webp" class="dishPic">
                     <h2 class="dishTitle">Bucatini Alfredo with Broccoli</h2>
-                </div>
-            </a>
-            <a href="recipe-page.html">
-                <div class="recipe-card Vegetarian">
+                </a>
+            </div>
+
+            <div class="recipe-card Vegetarian">
+                <a href="recipe-page.html">    
                     <img src="Media/Bucatini_Tomato_Sauce_with_Roasted_Broccoli/bucatini-tomato-teaser-header-img.webp" class="dishPic">
                     <h2 class="dishTitle">Bucatini & Tomato Sauce with Roasted Broccoli</h2>
-                </div>
-            </a>
-            <a href="recipe-page.html">
-                <div class="recipe-card Vegetarian">
+                </a>
+            </div>
+            
+            <div class="recipe-card Vegetarian">
+                <a href="recipe-page.html">
                     <img src="Media/Cheesy_Enchiladas_Rojas_with_Mushrooms_Kale/cheesy-enchiladas-teaser-header-img.webp" class="dishPic">
                     <h2 class="dishTitle">Cheesy Enchiladas Rojas with Mushrooms & Kale</h2>
-                </div>
-            </a>
-            <a href="recipe-page.html">
-                <div class="recipe-card Seafood">
+                </a>
+            </div>
+            
+            <div class="recipe-card Seafood">
+                <a href="recipe-page.html">
                     <img src="Media/Crispy_Fish_Sandwiches_with_Tartar_Sauce_Roasted_Sweet_Potato_Wedges/fish-sandwich-teaser-header-img.webp" class="dishPic">
                     <h2 class="dishTitle">Crispy Fish Sandwiches with Tartar Sauce & Roasted Sweet Potato Wedges</h2>
-                </div>
-            </a>
-            <a href="recipe-page.html">
-                <div class="recipe-card Chicken/Turkey">
+                </a>
+            </div>
+           
+            
+            <div class="recipe-card Chicken/Turkey">
+                <a href="recipe-page.html">
                     <img src="Media/General_Tsos_Chicken_with_Bok_Choy_Jasmine_Rice/general-tso-chicken-teaser-header-img.webp" class="dishPic">
                     <h2 class="dishTitle">General Tso's Chicken with Bok Choy & Jasmine Rice</h2>
-                </div>
-            </a>
-            <a href="recipe-page.html">
-                <div class="recipe-card Pork">
+                </a>
+            </div>
+
+           
+            <div class="recipe-card Pork">
+                <a href="recipe-page.html">
                     <img src="Media/HoisinGlazed_Pork_Chops_with_StirFried_Vegetables_Wonton_Noodles/hoisin-pork-teaser-header-img.webp" class="dishPic">
                     <h2 class="dishTitle">Hoisin-Glazed Pork Chops with Stir-Fried Vegetables & Wonton Noodles</h2>
-                </div>
-            </a>
+                </a>
+            </div>
+   
             <a href="recipe-page.html">
                 <div class="recipe-card Seafood">
                     <img src="Media/HoneyButter_Barramundi_with_Zaatar_Roasted_Vegetables/honeybutter-barramundi-teaser-header-img.webp" class="dishPic">
