@@ -42,20 +42,6 @@
             </ul>
             <img src="Media/Ancho-Orange_Chicken_with_Kale_Rice_Roasted_Carrots/ancho-chicken-ingredients.webp" alt="Ingredients needed to cook Ancho-Orange Chicken with Kale Rice & Roasted Carrots." class="IngredientsImg">
             <hr>
-            <div id="ExtraInstruc">
-    
-            </div>
-            <div id="toolsNeeded">
-                <div>
-                    <h2>Garlic Press</h2>
-                    <br>
-                        <p>Slicing garlic has never been simpler. This two-sided essential is designed to do two jobs in one: crush garlic and slice it. Made by Harold Import Company, a family-owned American business with over 50 years of experience, this easy-to-use press owes its incredible durability to its heavyweight, stainless steel construction. To use it, simply place the clove in the hopper and press downward for freshly pressed garlic, or flip it over to get uniform slices of garlic. And to ensure minimal mess, it includes a handy cleaning tool for removing leftover pressed garlic after use.</p>
-                </div>
-                <div>
-                    <img src="Media/Ancho-Orange_Chicken_with_Kale_Rice_Roasted_Carrots/ancho-chicken-tool.webp" alt="Image of garlic press." class="ToolImg">
-                </div>
-            </div>
-            <hr>
             <h2>Intructions:</h2>
             <br>
             <ol id="RecipeSteps">

@@ -14,7 +14,7 @@
     <div id="searchBar">
         <form>
             <input type="text" placeholder="Search.." id="inputbar">
-            <input type="submit" value="Search" onclick="nextPage()" id="inputbutton"> 
+            <input type="submit" value="Search" id="inputbutton"> 
         </form>
     </div>
     <div id="filterbuttons">
