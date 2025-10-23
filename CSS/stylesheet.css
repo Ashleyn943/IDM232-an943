@@ -45,6 +45,7 @@ hr{
 }
     #inputbar{
         background: var(--dark-blue-300);
+        border-radius: .5rem;
         color: var(--cream-100);
         font-size: 1.0625rem;
         padding: .25rem;
@@ -52,6 +53,7 @@ hr{
     }
     #inputbutton{
         background: var(--dark-blue-300);
+        border-radius: .5rem;
         color: var(--cream-100);
         cursor: pointer;
         font-size: 1rem;
@@ -62,10 +64,12 @@ hr{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
         .sort{
             background: var(--dark-blue-300);
+            border-radius: .5rem;
             color: var(--cream-100);
-            font-size: 1rem;
+            font-size: 1.5rem;
             margin: .25rem;
             padding: .2rem;
         }
@@ -98,7 +102,7 @@ hr{
         margin: 1rem;
         overflow: hidden;
         padding: 1rem;
-        min-height: 470px;
+        min-height: max-content;
         display: none;
     }
         .dishTitle{
@@ -200,8 +204,7 @@ hr{
             grid-template-columns: 33% 33% 33%;
         }
         .recipe-card{
-            min-height: 335px;
-            max-width: 255px;
+            min-height: max-content;
         }
 
             .dishTitle{
@@ -254,10 +257,6 @@ hr{
         grid-template-columns: 33% 33% 33%;
         margin: 0rem 7rem;
     }
-        .recipe-card{
-            min-height: 435px;
-            min-width: fit-content;
-        }
 
     /*imgs*/
     .dishPic{
@@ -283,6 +282,6 @@ hr{
         /*button*/
         #backBtn{
             margin-left: 6rem;
-            padding-bottom: 3rem;
+            padding: 1rem 0;
         }
 }

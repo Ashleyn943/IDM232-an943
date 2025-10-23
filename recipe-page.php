@@ -11,10 +11,10 @@
     <div class="page-header">
         <h1><a href="index.php">Recipes</a></h1>
     </div>
-    <div id="backBtn">
-        <h3><a href="index.php">Back to Recipe Catalog</a></h3>
-    </div>
     <div id="contents">
+        <div id="backBtn">
+            <h3><a href="index.php">Back to Recipe Catalog</a></h3>
+        </div>
         <div id="RecipeHead">
             <div>
                 <img src="Media/Ancho-Orange_Chicken_with_Kale_Rice_Roasted_Carrots/ancho-chicken-teaser-header-img.webp" alt="Image of Ancho-Orange Chicken with Kale Rice & Roasted Carrots dish." class="RecipeImg">
