@@ -149,6 +149,10 @@ hr{
             width: 50%;
         }
 
+        .RecipeTitle, .RecipeDescrip{
+            text-align: center;
+        }
+
     #IngredList{
         margin: .5rem 3rem;
     }
@@ -176,22 +180,6 @@ hr{
             margin-top: .5rem;
         }
 
-/*Error Page*/
-#errorwarning{
-    margin: 2rem;
-    text-align: center;
-}
-
-#errorReturn{
-    text-align: center;
-    a{
-        color: var(--foreground);
-    }
-    a:hover{
-        color: var(--yellow-200);
-    }
-}
-
 @media screen and (min-width: 600px) {
 /*filter*/
     button.sort{
@@ -218,6 +206,9 @@ hr{
     grid-template-columns: 45% 55%;
     align-items: center;
 }
+    .RecipeTitle, .RecipeDescrip{
+            text-align: left;
+        }
 
 #RecipeIngredients{
     display: grid;
@@ -299,5 +290,17 @@ hr{
 
     #IngredList>li{
         font-size: 1.25rem;
+    }
+
+    .StepImg{
+        width: 50%;
+        margin-bottom: 3rem;
+    }
+    
+    .stepText{
+        font-size: 1.4rem;
+        p{
+            font-size: 1.4rem;
+        }
     }
 }

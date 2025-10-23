@@ -60,7 +60,7 @@
                     <img src="Media/Ancho-Orange_Chicken_with_Kale_Rice_Roasted_Carrots/ancho-chicken-step2.webp" alt="Cleaned and prepared produce for the next step." class="StepImg">
                 </li>
                 <li class="stepText">
-                    <p >Place the sliced carrots on a sheet pan. Drizzle with olive oil and season with salt and pepper; toss to coat. Arrange in an even layer. Roast 15 to 17 minutes, or until tender when pierced with a fork. Remove from the oven.</p>
+                    <p>Place the sliced carrots on a sheet pan. Drizzle with olive oil and season with salt and pepper; toss to coat. Arrange in an even layer. Roast 15 to 17 minutes, or until tender when pierced with a fork. Remove from the oven.</p>
                     <img src="Media/Ancho-Orange_Chicken_with_Kale_Rice_Roasted_Carrots/ancho-chicken-step3.webp" alt="Carrots batons on baking sheet, seasoned and ready to be roasted." class="StepImg">
                 </li>
                 <li class="stepText">
