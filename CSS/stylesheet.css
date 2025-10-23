@@ -125,7 +125,7 @@ hr{
 /*Recipe Page*/
 
 #backBtn{
-    margin-left: 1rem;
+    margin:.5rem 0rem .5rem 1rem;
     a{
         color: var(--foreground);
     }
@@ -149,7 +149,7 @@ hr{
             width: 50%;
         }
 
-    #RecipeIngredients{
+    #IngredList{
         margin: .5rem 3rem;
     }
         
@@ -213,19 +213,30 @@ hr{
         }
 
 /*recipe page*/
-#RecipeHead, #toolsNeeded{
+#RecipeHead{
     display: grid;
     grid-template-columns: 45% 55%;
     align-items: center;
 }
+
+#RecipeIngredients{
+    display: grid;
+    grid-template-columns: 55% 45%;
+    align-items: center;
+}
+
      #contents{
         margin: auto 4rem;
     }
 
     /*imgs*/
-    .IngredientsImg, .StepImg{
+    .StepImg{
         width: 50%;
     }
+        .IngredientsImg{
+            width: 100%;
+            margin: .5rem;
+        }
         .StepImg{
             margin-bottom: 3rem;
         }
@@ -242,10 +253,12 @@ hr{
         }
 
     /*text*/
-        p, #RecipeIngredients>li{
+        p{
             font-size: 1.25rem;
         }
-
+            #IngredList>li{
+                font-size: 1rem;
+            }
 }
 
 
@@ -276,12 +289,15 @@ hr{
 
     /*recipe page*/
     #contents{
-        margin: auto 16rem;
+        margin: auto 14rem;
     }
 
         /*button*/
         #backBtn{
-            margin-left: 6rem;
             padding: 1rem 0;
         }
+
+    #IngredList>li{
+        font-size: 1.25rem;
+    }
 }

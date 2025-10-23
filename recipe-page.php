@@ -13,7 +13,7 @@
     </div>
     <div id="contents">
         <div id="backBtn">
-            <h3><a href="index.php">Back to Recipe Catalog</a></h3>
+            <h3><a href="index.php">&larr; Back to Recipe Catalog</a></h3>
         </div>
         <div id="RecipeHead">
             <div>
@@ -26,21 +26,27 @@
         </div>
         <hr>
         <div id="RecipeInstruct">
-            <h2 id="IngredTitle">Ingredients</h2>
-            <ul id="RecipeIngredients">
-                <li>4 Boneless, Skinless Chicken Breasts</li>
-                <li>3/4 cup Jasmine Rice</li>
-                <li>1 Orange</li>
-                <li>1 Bunch of Kale</li>
-                <li>1 Lime</li>
-                <li>2 Cloves of Garlic</li>
-                <li>4 Carrots</li>
-                <li>1 Tbsp Ancho Chile Paste </li>
-                <li>2 Tbsps Butter</li>
-                <li>2 Tbsps Crème Fraîche </li>
-                <li>3 Tbsps Golden Raisins</li>
-            </ul>
-            <img src="Media/Ancho-Orange_Chicken_with_Kale_Rice_Roasted_Carrots/ancho-chicken-ingredients.webp" alt="Ingredients needed to cook Ancho-Orange Chicken with Kale Rice & Roasted Carrots." class="IngredientsImg">
+            <div id="RecipeIngredients">
+                <div>
+                    <h2 id="IngredTitle">Ingredients</h2>
+                    <ul id="IngredList">
+                        <li>4 Boneless, Skinless Chicken Breasts</li>
+                        <li>3/4 cup Jasmine Rice</li>
+                        <li>1 Orange</li>
+                        <li>1 Bunch of Kale</li>
+                        <li>1 Lime</li>
+                        <li>2 Cloves of Garlic</li>
+                        <li>4 Carrots</li>
+                        <li>1 Tbsp Ancho Chile Paste </li>
+                        <li>2 Tbsps Butter</li>
+                        <li>2 Tbsps Crème Fraîche </li>
+                        <li>3 Tbsps Golden Raisins</li>
+                    </ul>
+                </div>
+                <div id="IngredImgHome">
+                    <img src="Media/Ancho-Orange_Chicken_with_Kale_Rice_Roasted_Carrots/ancho-chicken-ingredients.webp" alt="List of Ingredients for Recipe" class="IngredientsImg">
+                </div>
+            </div>
             <hr>
             <h2>Intructions:</h2>
             <br>
@@ -70,6 +76,9 @@
                     <img src="Media/Ancho-Orange_Chicken_with_Kale_Rice_Roasted_Carrots/ancho-chicken-step6.webp" alt="Kale being stirred into rice." class="StepImg">
                 </li>
             </ol>
+        </div>
+        <div id="backBtn">
+            <h3><a href="index.php">&larr; Back to Recipe Catalog</a></h3>
         </div>
     </div>
 </body>
