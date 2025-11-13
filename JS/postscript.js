@@ -1,11 +1,4 @@
 
-
-//search link
-
-function nextPage() {
-  setTimeout(function () { window.location = "searcherror.php" }, 1);
-};
-
 //filter
 filterSelection("all")
 function filterSelection(c) {

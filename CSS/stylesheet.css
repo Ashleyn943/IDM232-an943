@@ -67,11 +67,12 @@ hr{
     flex-wrap: wrap;
         .sort{
             background: var(--dark-blue-300);
+            border: .2rem solid var(--dark-blue-300);
             border-radius: .5rem;
             color: var(--cream-100);
             font-size: 1.5rem;
             margin: .25rem;
-            padding: .2rem;
+            padding: .55rem;
         }
         .sort:hover{
             background: var(--cream-100);
@@ -110,13 +111,13 @@ hr{
             text-align: center;
         }
 
-        .dishPic{
+        img.imgCard{
             outline: .2rem solid var(--foreground);
             border-radius: 2rem;
-            margin-bottom: 1rem;
             height: auto;
-            width: 100%;
-        }
+            max-width: 50%;
+            margin: .5rem auto;
+        }   
 
     .show {
         display: block;
@@ -200,6 +201,12 @@ hr{
             text-align: center;
         }
 
+        img.imgCard{
+            border-radius: 2rem;
+            height: auto;
+            max-width: 75%;
+        }   
+
 /*recipe page*/
 #RecipeHead{
     display: grid;
@@ -259,26 +266,23 @@ hr{
     .recipe-rows{
         display: grid;
         grid-template-columns: 33% 33% 33%;
-        margin: 0rem 7rem;
+        margin: 0rem 8rem;
     }
 
-    /*imgs*/
-    .dishPic{
-        border-radius: 2rem;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 1rem;
-        height: auto;
-        max-width: 100%;
-    }   
-
-    /*text*/
-    .dishTitle{
-            font-size: 1.25rem;
+        div.recipe-card{
+            display: block;
             text-align: center;
         }
 
-    /*recipe page*/
+        /*imgs*/
+        img.imgCard{
+            border-radius: 2rem;
+            height: auto;
+            max-width: 50%;
+        }   
+
+
+/*recipe page*/
     #contents{
         margin: auto 14rem;
     }

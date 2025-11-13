@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel=normalize href="CSS/normalize.css">
     <link rel=stylesheet href="CSS/stylesheet.css">
-    <title>Recipe</title>
+    <title>Recipes for You</title>
 </head>
 <body>
     <div class="page-header">
-        <h1><a href="index.php">Recipes</a></h1>
+        <h1><a href="index.php">Recipes for You</a></h1>
     </div>
     <div id="contents">
         <div id="backBtn">
