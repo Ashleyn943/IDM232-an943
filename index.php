@@ -42,7 +42,7 @@
                             echo 
                             "<div class='recipe-card $row[category]'>
                                 <a href='recipe-page.php?id=$row[id]'>
-                                    <img class='imgCard' src='Media/$img[0].webp'> <br>
+                                    <img loading='lazy' class='imgCard' src='Media/$img[0].webp'> <br>
                                     <p>$row[title]</p>
                                 </a>
                             </div>";
@@ -62,7 +62,7 @@
                             echo 
                             "<div class='recipe-card $row[category]'>
                                 <a href='recipe-page.php?id=$row[id]'>
-                                    <img class='imgCard' src='Media/$img[0].webp'> <br>
+                                    <img loading='lazy' class='imgCard' src='Media/$img[0].webp'> <br>
                                     <p>$row[title]</p>
                                 </a>
                             </div>";

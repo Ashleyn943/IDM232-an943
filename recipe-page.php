@@ -33,7 +33,7 @@
                 echo "
                 <div id='RecipeHead'>
                     <div>
-                        <img class='RecipeImg' src='Media/$img[0].webp'>
+                        <img loading='lazy' class='RecipeImg' src='Media/$img[0].webp'>
                     </div>
                     <div>
                         <h1 class='RecipeTitle'>$row[title]</h1>
@@ -54,7 +54,7 @@
                                 </ul>
                             </div>
                         <div id='IngredImgHome'>
-                            <img src='Media/$img[1].webp' alt='List of Ingredients for Recipe' class='IngredientsImg'>
+                            <img loading='lazy' src='Media/$img[1].webp' alt='List of Ingredients for Recipe' class='IngredientsImg'>
                         </div>
                         </div>
                     <hr>
@@ -65,13 +65,13 @@
                                     for($x = 0, $y = 2; $x <= 5 && $y < 7; $x++, $y++){
                                         echo 
                                             "<li class='stepText'>$steps[$x]</li>
-                                            <img src='Media/$img[$y].webp' alt='Image depicting step' class='StepImg'>";
+                                            <img loading='lazy' src='Media/$img[$y].webp' alt='Image depicting step' class='StepImg'>";
                                     }
                                 } else {
                                     for($x = 0, $y = 2; $x <= 6 && $y < 8; $x++, $y++){
                                         echo 
                                                 "<li class='stepText'>$steps[$x]</li>
-                                                <img src='Media/$img[$y].webp' alt='Image depicting step' class='StepImg'>";
+                                                <img loading='lazy' src='Media/$img[$y].webp' alt='Image depicting step' class='StepImg'>";
                                     }
                                 };
 
