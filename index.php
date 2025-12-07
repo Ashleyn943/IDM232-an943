@@ -7,8 +7,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel=normalize href="CSS/normalize.css">
-    <link rel=stylesheet href="CSS/stylesheet.css">
+    <link rel="normalize" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/stylesheet.css">
     <title>Recipes for You</title>
 </head>
 <body>
@@ -32,12 +32,16 @@
     
     <div class="recipe-rows">
         <?php
-            if (isset($_GET['submit'])) {
-                $query=mysqli_real_escape_string($connection, $_GET['query']);
-                $sql="SELECT * FROM `recipe_data` WHERE `title` LIKE '%$query%' OR `descript` LIKE '%$query%' OR `ingredients` LIKE '%$query%' OR 'category' LIKE '%$query%'";
-                $res=mysqli_query($connection, $sql);
-                    if (mysqli_num_rows($res)> 0) {
-                        while ($row=mysqli_fetch_assoc($res)) {
+            if (isset($_GET['query'])) {
+                $search = $_GET['query'];
+                $query = "%$search%";
+                $stmt = $connection->prepare("SELECT * FROM `recipe_data` WHERE `title` LIKE ? OR `descript` LIKE ? OR `ingredients` LIKE ? OR 'category' LIKE ?");
+                $stmt->bind_param("ssss", $query,$query,$query,$query);
+                $stmt->execute();
+                $result = $stmt->get_result();
+
+                    if($result->num_rows > 0) {
+                        while ($row = $result->fetch_assoc()) {
                             $img = explode("*", $row["images"]);
                             echo 
                             "<div class='recipe-card $row[category]'>
@@ -52,23 +56,26 @@
                         <div></div>
                         <p id='NotFound'>No results for '$_GET[query]' found. <br> Please try again.</p>
                         <div></div>";
-                    }
-            } else {
-                $sql="SELECT * FROM `recipe_data`";
-                $res=mysqli_query($connection, $sql);
-                    if (mysqli_num_rows($res)> 0) {
-                        while ($row=mysqli_fetch_assoc($res)) {
-                            $img = explode("*", $row["images"]);
-                            echo 
-                            "<div class='recipe-card $row[category]'>
-                                <a href='recipe-page.php?id=$row[id]'>
-                                    <img loading='lazy' class='imgCard' src='Media/$img[0].webp'> <br>
-                                    <p>$row[title]</p>
-                                </a>
-                            </div>";
+                    } 
+                } else {
+                    $stmt = $connection->prepare("SELECT * FROM `recipe_data`");
+                    $stmt->execute();
+                    $result = $stmt->get_result();
+                        if($result->num_rows > 0) {
+                            while ($row = $result->fetch_assoc()) {
+                                $img = explode("*", $row["images"]);
+                                echo 
+                                "<div class='recipe-card $row[category]'>
+                                    <a href='recipe-page.php?id=$row[id]'>
+                                        <img loading='lazy' class='imgCard' src='Media/$img[0].webp'> <br>
+                                        <p>$row[title]</p>
+                                    </a>
+                                </div>";
+                            }
                         }
-                    }
-            };
+                $stmt->close();
+                };
+            $connection->close();
         ?>
     <script src="JS/postscript.js"></script>
 </body>
