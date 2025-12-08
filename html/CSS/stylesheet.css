@@ -1,0 +1,306 @@
+
+:root{
+    --dark-blue-300: #000814;
+    --dark-blue-200: #001d3d;
+    --dark-blue-100: #003566;
+    --yellow-200: #ffc300;
+    --yellow-100: #ffd60a;
+    --cream-100: #efefd0;
+    --black-100: #00171f;
+    --white-100: #ffffff;
+
+    --background:var(--cream-100);
+    --foreground:var(--dark-blue-100);
+    --links:var(--white-100);
+}
+
+* {
+    padding:0;
+    margin:0;
+}
+
+body{
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: var(--background);
+    color: var(--foreground);
+}
+
+a{
+    text-decoration: none;
+    color: var(--cream-100);
+}
+    a:hover{
+        color: var(--yellow-100);
+        text-decoration: underline;
+    }
+
+hr{
+    margin: 2rem;
+}
+
+/*div*/
+#searchBar{
+    text-align: center;
+}
+    #inputbar{
+        background: var(--dark-blue-300);
+        border-radius: .5rem;
+        color: var(--cream-100);
+        font-size: 1.0625rem;
+        padding: .25rem;
+        margin: 1rem;
+    }
+    #inputbutton{
+        background: var(--dark-blue-300);
+        border-radius: .5rem;
+        color: var(--cream-100);
+        cursor: pointer;
+        font-size: 1rem;
+        padding: .25rem;
+    }
+
+#filterbuttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+        .sort{
+            background: var(--dark-blue-300);
+            border-radius: .5rem;
+            color: var(--cream-100);
+            font-size: 1.5rem;
+            margin: .25rem;
+            padding: .2rem;
+        }
+        .sort:hover{
+            background: var(--cream-100);
+            color: var(--dark-blue-300);
+            cursor: pointer;
+        }
+        .active{
+            background: var(--cream-100);
+            color: var(--dark-blue-300);
+            cursor: pointer;
+        }
+}
+
+.page-header{
+    background-color: var(--dark-blue-300);
+    margin: 0rem 0rem 2rem;
+    padding: 1.5rem;
+    text-align: center;
+    h1{
+        margin: 0rem;
+        color: var(--cream-100);
+    }
+}
+    .recipe-card{
+        background-color: var(--dark-blue-200);
+        border: .5rem solid var(--yellow-200);
+        border-radius: 2rem;
+        margin: 1rem;
+        overflow: hidden;
+        padding: 1rem;
+        min-height: max-content;
+        display: none;
+    }
+        .dishTitle{
+            font-size: 1.25rem;
+            text-align: center;
+        }
+
+        .dishPic{
+            outline: .2rem solid var(--foreground);
+            border-radius: 2rem;
+            margin-bottom: 1rem;
+            height: auto;
+            width: 100%;
+        }
+
+    .show {
+        display: block;
+    }
+
+/*Recipe Page*/
+
+#backBtn{
+    margin:.5rem 0rem .5rem 1rem;
+    a{
+        color: var(--foreground);
+    }
+    a:hover{
+        color: var(--yellow-200);
+    }
+}
+
+#contents{
+    margin: 1rem;
+}
+    #RecipeHead{
+        margin-bottom: 1rem;
+    }
+        .RecipeImg{
+            border: .5rem solid var(--foreground);
+            border-radius: 2rem;
+            display: block;
+            margin: auto;
+            height:auto;
+            width: 50%;
+        }
+
+        .RecipeTitle, .RecipeDescrip{
+            text-align: center;
+        }
+
+    #IngredList{
+        margin: .5rem 3rem;
+    }
+        
+    .IngredientsImg, .ToolImg, .StepImg{
+        display: block;
+        height: auto;
+        width: 75%;
+    }
+        .IngredientsImg, .StepImg{
+            margin: 2rem auto;
+        }
+        .ToolImg{
+            margin: auto
+        }
+        .ToolImg, .StepImg{
+            border: .5rem solid var(--foreground);
+            border-radius: 2rem;
+        }
+
+    li.stepText{
+        margin: auto 1rem;
+    }
+        .StepImg{
+            margin-top: .5rem;
+        }
+
+@media screen and (min-width: 600px) {
+/*filter*/
+    button.sort{
+        font-size: 1.25rem !important;
+    }
+
+/*div*/
+    .recipe-rows{
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+        }
+        .recipe-card{
+            min-height: max-content;
+        }
+
+            .dishTitle{
+            font-size: 1rem;
+            text-align: center;
+        }
+
+/*recipe page*/
+#RecipeHead{
+    display: grid;
+    grid-template-columns: 45% 55%;
+    align-items: center;
+}
+    .RecipeTitle, .RecipeDescrip{
+            text-align: left;
+        }
+
+#RecipeIngredients{
+    display: grid;
+    grid-template-columns: 55% 45%;
+    align-items: center;
+}
+
+     #contents{
+        margin: auto 4rem;
+    }
+
+    /*imgs*/
+    .StepImg{
+        width: 50%;
+    }
+        .IngredientsImg{
+            width: 100%;
+            margin: .5rem;
+        }
+        .StepImg{
+            margin-bottom: 3rem;
+        }
+
+        .RecipeImg{
+            width: 80%;
+            margin: 1.5rem;
+        }
+
+    /*button*/
+        #backBtn{
+            margin-left: 3rem;
+            padding-bottom: 2rem;
+        }
+
+    /*text*/
+        p{
+            font-size: 1.25rem;
+        }
+            #IngredList>li{
+                font-size: 1rem;
+            }
+}
+
+
+@media screen and (min-width: 1000px) {
+
+    /*div*/
+    .recipe-rows{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        margin: 0rem 7rem;
+    }
+
+    /*imgs*/
+    .dishPic{
+        border-radius: 2rem;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+        height: auto;
+        max-width: 100%;
+    }   
+
+    /*text*/
+    .dishTitle{
+            font-size: 1.25rem;
+            text-align: center;
+        }
+
+    /*recipe page*/
+    #contents{
+        margin: auto 14rem;
+    }
+
+        /*button*/
+        #backBtn{
+            padding: 1rem 0;
+        }
+
+    #IngredList>li{
+        font-size: 1.25rem;
+    }
+
+    .StepImg{
+        width: 50%;
+        margin-bottom: 3rem;
+    }
+    
+    .stepText{
+        font-size: 1.4rem;
+        p{
+            font-size: 1.4rem;
+        }
+    }
+}
