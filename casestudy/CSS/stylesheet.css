@@ -25,3 +25,47 @@ body{
     background-color: var(--background);
     color: var(--foreground);
 }
+
+.page-header{
+    background-color: var(--dark-blue-300);
+    margin: 0rem 0rem 2rem;
+    padding: 1.5rem;
+    text-align: center;
+    h1{
+        margin: 0rem;
+        color: var(--cream-100);
+    }
+}
+
+#main-body{
+    width: 800px;
+    max-width: 90%;
+    margin: 2rem auto;
+}
+
+/*Text*/
+
+#title{
+    h1{
+        text-align: center;
+        margin: auto auto .5rem;
+    }
+}
+
+h2{
+    font-weight: bold;
+    margin: 1rem auto .2rem;
+}
+
+p{
+    margin: .5rem auto;
+}
+
+/*Images*/
+
+.imgs{
+    width: 100%;
+    margin: 1rem auto;
+    border: var(--dark-blue-300) solid .5rem;
+    border-radius: 1rem;
+}
