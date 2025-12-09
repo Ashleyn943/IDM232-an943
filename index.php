@@ -6,9 +6,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="normalize" href="CSS/normalize.css">
     <link rel="stylesheet" href="CSS/stylesheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipes for You</title>
 </head>
 <body>
@@ -47,7 +47,7 @@
                             "<div class='recipe-card $row[category]'>
                                 <a href='recipe-page.php?id=$row[id]'>
                                     <img loading='lazy' class='imgCard' src='Media/$img[0].webp'> <br>
-                                    <p>$row[title]</p>
+                                    <p class='dishTitle'>$row[title]</p>
                                 </a>
                             </div>";
                         }
@@ -68,7 +68,7 @@
                                 "<div class='recipe-card $row[category]'>
                                     <a href='recipe-page.php?id=$row[id]'>
                                         <img loading='lazy' class='imgCard' src='Media/$img[0].webp'> <br>
-                                        <p>$row[title]</p>
+                                        <p class='dishTitle'>$row[title]</p>
                                     </a>
                                 </div>";
                             }

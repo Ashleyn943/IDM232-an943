@@ -36,7 +36,7 @@ function RemoveFilter(element, name) {
 var btnContainer = document.getElementById("filterbuttons");
 var btns = btnContainer.getElementsByClassName("sort");
 for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function(){
+  btns[i].addEventListener("click touchstart", function(){
     var current = document.getElementsByClassName("active");
     current[0].className = current[0].className.replace(" active", "");
     this.className += " active";
