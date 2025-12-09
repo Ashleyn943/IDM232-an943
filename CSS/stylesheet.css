@@ -108,7 +108,7 @@ hr{
         border-radius: 2rem;
         margin: 1rem 1.5rem;
         overflow: hidden;
-        display: flex;
+        display: none;
         text-align: center;
     }
         .dishTitle{
@@ -133,6 +133,13 @@ hr{
             font-size: 1.75rem;
             padding: 1rem;
             text-align: center;
+        }
+    
+        #errornotice{
+            position: absolute;
+            margin: auto;
+            display: flex;
+            justify-self: center;
         }
 
 /*Recipe Page*/

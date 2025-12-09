@@ -53,9 +53,9 @@
                         }
                     } else {
                         echo "
-                        <div></div>
+                        <div id='errornotice'>
                         <p id='NotFound'>No results for '$_GET[query]' found. <br> Please try again.</p>
-                        <div></div>";
+                        </div>";
                     } 
                 } else {
                     $stmt = $connection->prepare("SELECT * FROM `recipe_data`");
